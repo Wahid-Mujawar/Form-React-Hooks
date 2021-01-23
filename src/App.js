@@ -39,7 +39,7 @@ function FormUsingHook() {
           placeholder ="First Name"
           name="firstName">
         </input>
-        <span>Please enter the first name</span>
+        {submitted ? <span>Please enter the first name</span> : null}
 
         <input
           onChange={handleLastNameInputchange}
@@ -48,9 +48,7 @@ function FormUsingHook() {
           placeholder ="Last Name"
           name="lastName">
         </input>
-        <span>Please enter the last name</span>
-
-
+        {submitted ? <span>Please enter the last name</span> : null}
         <input
           onChange={handleEmailInputchange}
           values={values.email}
@@ -58,7 +56,7 @@ function FormUsingHook() {
           placeholder ="Email"
           name="email">
         </input>
-        <span>Please enter the email</span>
+        {submitted ? <span>Please enter the email</span>: null}
 
         <button 
         className = "form-field"
