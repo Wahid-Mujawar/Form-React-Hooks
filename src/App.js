@@ -22,6 +22,11 @@ function FormUsingHook() {
     setValues({...values, email: event.target.value})
   }
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSubmitted(true);
+  }
+
   return (
     <div className="form-container">
       <form className="register-form">
