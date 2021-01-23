@@ -26,13 +26,16 @@ function FormUsingHook() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if(values.firstName && values.lastName && values.email){
+      setValid(true);
+    }
     setSubmitted(true);
   }
 
   return (
     <div className="form-container">
       <form className="register-form" onSubmit={handleSubmit}>
-        {submitted ? <div className="success-message">Success !
+        {submitted && valid ? <div className="success-message">Success !
         Thankyou for registering</div> : null}
         <input
           onChange={handleFirstNameInputchange}
