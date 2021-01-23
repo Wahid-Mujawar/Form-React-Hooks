@@ -1,30 +1,33 @@
 import './App.css';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 function FormUsingHook() {
 
   const [values, setValues] = useState({
-    firstName="",
-    lastName="",
-    email="",
+    firstName: "",
+    lastName: "",
+    email: "",
   });
 
   return (
     <div className="form-container">
       <form className="register-form">
         <input
+          values={values.firstName}
           className = "form-field"
           placeholder ="First Name"
-          name="firstname">
+          name="firstName">
         </input>
 
         <input
+          values={values.lastName}
           className = "form-field"
           placeholder ="Last Name"
-          name="lastname">
+          name="lastName">
         </input>
 
         <input
+          values={values.email}
           className = "form-field"
           placeholder ="Email"
           name="email">
