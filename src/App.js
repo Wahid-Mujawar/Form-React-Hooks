@@ -24,6 +24,8 @@ function FormUsingHook() {
   return (
     <div className="form-container">
       <form className="register-form">
+        <div className="success-message">Success !
+        Thankyou for registering</div>
         <input
         onChange={handleFirstNameInputchange}
           values={values.firstName}
