@@ -9,6 +9,10 @@ function FormUsingHook() {
     email: "",
   });
 
+  const handleFirstInputchange = (event) => {
+    setValues({...values, firstName: event.target.value})
+  }
+
   return (
     <div className="form-container">
       <form className="register-form">
