@@ -17,6 +17,7 @@ function FormUsingHook() {
     <div className="form-container">
       <form className="register-form">
         <input
+        onChange={handleFirstInputchange}
           values={values.firstName}
           className = "form-field"
           placeholder ="First Name"
