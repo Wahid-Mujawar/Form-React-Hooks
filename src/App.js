@@ -25,10 +25,10 @@ function FormUsingHook() {
   return (
     <div className="form-container">
       <form className="register-form">
-        <div className="success-message">Success !
-        Thankyou for registering</div>
+        {submitted ? <div className="success-message">Success !
+        Thankyou for registering</div> : null}
         <input
-        onChange={handleFirstNameInputchange}
+          onChange={handleFirstNameInputchange}
           values={values.firstName}
           className = "form-field"
           placeholder ="First Name"
