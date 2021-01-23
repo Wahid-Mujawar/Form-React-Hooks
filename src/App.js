@@ -56,7 +56,7 @@ function FormUsingHook() {
           placeholder ="Email"
           name="email">
         </input>
-        {submitted ? <span>Please enter the email</span>: null}
+        {submitted  && !values.email ? <span>Please enter the email</span>: null}
 
         <button 
         className = "form-field"
