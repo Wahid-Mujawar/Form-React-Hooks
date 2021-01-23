@@ -13,11 +13,11 @@ function FormUsingHook() {
     setValues({...values, firstName: event.target.value})
   }
 
-  const handleFirstInputchange = (event) => {
+  const handleLastNameInputchange = (event) => {
     setValues({...values, lastName: event.target.value})
   }
 
-  const handleFirstInputchange = (event) => {
+  const handleEmailInputchange = (event) => {
     setValues({...values, email: event.target.value})
   }
 
@@ -33,6 +33,7 @@ function FormUsingHook() {
         </input>
 
         <input
+          onChange={handleLastNameInputchange}
           values={values.lastName}
           className = "form-field"
           placeholder ="Last Name"
@@ -40,6 +41,7 @@ function FormUsingHook() {
         </input>
 
         <input
+          onChange={handleEmailInputchange}
           values={values.email}
           className = "form-field"
           placeholder ="Email"
