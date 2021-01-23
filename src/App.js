@@ -38,6 +38,7 @@ function FormUsingHook() {
           className = "form-field"
           placeholder ="First Name"
           name="firstName">
+          <span>Please enter the first name</span>
         </input>
 
         <input
@@ -46,6 +47,7 @@ function FormUsingHook() {
           className = "form-field"
           placeholder ="Last Name"
           name="lastName">
+          <span>Please enter the last name</span>
         </input>
 
         <input
