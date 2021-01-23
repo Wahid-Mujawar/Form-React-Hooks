@@ -29,7 +29,7 @@ function FormUsingHook() {
 
   return (
     <div className="form-container">
-      <form className="register-form">
+      <form className="register-form" onSubmit={handleSubmit}>
         {submitted ? <div className="success-message">Success !
         Thankyou for registering</div> : null}
         <input
