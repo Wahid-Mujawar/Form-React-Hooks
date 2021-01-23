@@ -56,6 +56,7 @@ function FormUsingHook() {
           className = "form-field"
           placeholder ="Email"
           name="email">
+          <span>Please enter the email</span>  
         </input>
 
         <button 
