@@ -57,6 +57,7 @@ input {
 button {
   background: #4caf50;
   color: white;
+  cursor: pointer;
 }
 
 button:disabled {
