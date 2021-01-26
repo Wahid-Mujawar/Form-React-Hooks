@@ -50,6 +50,7 @@ input {
 }
 
 .error {
+  border-style: solid;
 }
 
 button {
