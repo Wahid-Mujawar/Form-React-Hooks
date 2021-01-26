@@ -55,6 +55,7 @@ input {
 }
 
 button {
+  background: #4caf50;
 }
 
 button:disabled {
